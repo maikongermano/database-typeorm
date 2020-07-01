@@ -1,6 +1,6 @@
 import {
-  Entity, 
-  Column, 
+  Entity,
+  Column,
   PrimaryGeneratedColumn,
   ManyToOne,
   JoinColumn,
@@ -12,7 +12,6 @@ import Category from './Category';
 
 @Entity('transactions')
 class Transaction {
-  
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -25,8 +24,10 @@ class Transaction {
   @Column('decimal')
   value: number;
 
-  @ManyToOne(() => Category)
-  @JoinColumn({name: 'category_id'})
+  /* relacionamento varias transações podem ter uma categoria especifica
+  eager true trara as categoria juntas */
+  @ManyToOne(() => Category, category => category.transaction, { eager: true })
+  @JoinColumn({ name: 'category_id' })
   category: Category;
 
   @Column()
