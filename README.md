@@ -1,4 +1,4 @@
-# Banco de dados e upload de arquivos no Node.js
+# Banco de dados e upload de arquivos no Node.js 
 Este repositório é referente ao desafio 'Banco de dados e upload de arquivos no Node.js' do Bootcamp GoStack 12.0, da Rocketseat 🚀.
 
 # Proposta
@@ -16,7 +16,7 @@ Typescript 🦕
 Para obter esse projeto, siga os passos:
 1. Clone esse repositório utilizando <code>git clone</code>.
 2. Rode o comando <code> yarn </code> na raíz da pasta do projeto clonado para baixar as dependências.
-3. Rode <code> yarn dev:server </code> na raíz da pasta do projeto para inicializar o Metro Bundler.
+3. Rode <code> yarn dev:server </code> na raíz da pasta do projeto para inicializar.
 4. Aplicação back-end pronta para receber dados e listar dados.
 
 # Como Contribuir?
